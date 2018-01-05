@@ -1,12 +1,10 @@
 <template>
-  <div class="hello">
-    <tbody>
-      <tr v-for="artist in artists" :key="artist.mbid">
-        <router-link :to="{name: 'Artist', params: {mbid: artist.mbid}}">
-          <ArtistPartial :artist='artist'/>
-        </router-link>
-      </tr>
-    </tbody>
+  <div class="row">
+    <div class="col" v-for="artist in artists" :key="artist.mbid">
+      <router-link :to="{name: 'Artist', params: {mbid: artist.mbid}}">
+        <ArtistPartial :artist='artist'/>
+      </router-link>
+    </div>
   </div>
 </template>
 

@@ -1,5 +1,5 @@
 <template>
-  <div class="hello">
+  <div>
     <p> <ImagePartial :imageUrl="imageUrl"/> </p>
     <p> Name: {{ artist.name }} </p>
     <p> Listeners: {{ artist.listeners }} </p>
